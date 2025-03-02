@@ -1,0 +1,162 @@
+
+
+/* start global rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+font-family: "open sans", sans-serif;
+}
+ul{
+list-style: none;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screen */
+@media (min-width: 768px){
+    .container{
+    width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width: 992px){
+    .container{
+    width: 970px;
+    }
+}
+/* large screen */
+@media (min-width: 1200px){
+    .container{
+    width: 1170px;
+    }
+}
+
+.special-heading{
+    color: #ebeced;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+
+
+.special-heading + p{
+    margin: -22px 0 0;
+    font-size: 24px;
+    text-align: center;
+    color: #797979;
+}
+
+
+/* small screen */
+@media (max-width: 768px){
+    .special-heading{
+            font-size: 74px;
+        }
+    }
+
+
+
+/* Start Market */
+.market{
+    background-color:#f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.market .market-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.market .market-content .card{
+    background-color: white;
+}
+
+/* small screen */
+@media (max-width: 768px){
+    .market .market-content .card{
+            margin: 0 auto;
+            width: 85%;
+        }
+    }
+
+.market .market-content .card img{
+    max-width: 100%;
+}
+
+.market .market-content .card .info{
+    padding: 20px;
+}
+
+.market .market-content .card h3{
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    height: 55px;
+}
+
+.market .market-content .card .price{
+    text-align: center;
+    color: #777;
+    line-height: 2.6;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.market .market-content .card ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.market .market-content .card ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+.market .market-content .card ul li i {
+    color: #d0cfca;
+}
+
+.market .market-content .card ul li .active{
+    color: gold;
+}
+
+.market .market-content .card .rating {
+    text-align: center;
+    color: #777;
+    line-height: 2.6;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.market .market-content .card button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    background-color: #10cab7;
+    color: white;
+    padding: 9px 27px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* End Market */

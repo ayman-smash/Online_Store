@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- cart -->
+    <div class="cart">
+
+        <div class="top-cart">
+            <h3>Cart Items : <span class="count-item-cart">0</span></h3>
+            <span onclick="openCloseCart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items-in-cart" id="cart-items">
+
+
+        </div>
+
+        <div class="bottom-cart">
+
+            <div class="total">
+                <p>Subtotal</p>
+                <p class="price-cart-total">0$</p>
+            </div>
+
+            <div class="button-cart">
+                <a href="#" class="btn-cart">Checkout</a>
+                <span onclick="openCloseCart()" class="btn-cart trans-bg">Shop More</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Start Market -->
+    <div class="market" id="market">
+        <div class="top">
+            <div class="sorting">
+                <label for="sort-by">Sort By:</label>
+                <select name="sort-by" id="sort-by">
+                    <option id="a-z" value="a-z">Name: A to Z</option>
+                    <option id="z-a" value="z-a">Name: Z to A</option>
+                    <option id="l-h" value="l-h">Price: Low to High</option>
+                    <option id="h-l" value="h-l">Price: High to Low</option>
+                </select>
+            </div>
+            <div onclick="openCloseCart()" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </div>
+        <div class="container">
+        <h2 class="special-heading">Online Shopping</h2>
+        <p>Buy Everything In One Place.</p>
+        <div class="market-content">
+            
+        </div>
+        </div>
+    </div>
+    <!-- End Market -->
+    <script src="main.js"></script>
+</body>
+</html>
